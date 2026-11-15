@@ -1,0 +1,21 @@
+# Archivos de entorno con información sensible
+.env
+
+# Carpeta de dependencias y paquetes
+node_modules/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de registro y bases de datos locales
+*.log
+*.sqlite
+*.db
+
+# Archivos temporales y de editor
+*.tmp
+*.swp
+*~
+.vscode/
+.idea/

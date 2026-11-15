@@ -1,0 +1,21 @@
+name: Validación del Proyecto
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar que los archivos principales existen
+        run: |
+          test -f src/index.html && echo "index.html encontrado"
+          test -f src/styles.css && echo "styles.css encontrado"
+          test -f Dockerfile && echo "Dockerfile encontrado"
+          test -f docker-compose.yml && echo "docker-compose.yml encontrado"
+          test -f .gitignore && echo ".gitignore encontrado"
+          test -f .env.example && echo ".env.example encontrado"

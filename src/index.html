@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Horas Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de Horas Médicas</h1>
+        <p>Sistema de gestión de citas médicas en línea</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bienvenido</h2>
+            <p>Este servicio permite a los usuarios reservar y administrar sus horas médicas de forma sencilla y segura.</p>
+            
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="fecha">Fecha de atención:</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="especialidad">Especialidad:</label>
+                <select id="especialidad" name="especialidad" required>
+                    <option value="">Seleccione una especialidad</option>
+                    <option value="medicina-general">Medicina General</option>
+                    <option value="pediatria">Pediatría</option>
+                    <option value="cardiologia">Cardiología</option>
+                </select>
+
+                <button type="submit">Reservar Hora</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto DevOps — Entorno local de desarrollo</p>
+    </footer>
+</body>
+</html>
